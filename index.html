@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="contacts.js" defer></script>
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <div class="menu">
+        <div class="search">
+            <input type="search" placeholder="Search" id="searchBox" >
+        </div>
+        <div class="topBar">
+            <input type="button" value="Edit" id="editBtn" class="topButtons">
+            <input type="button" value="+" id="newContact" class="topButtons">
+        </div>
+    </div>
+    <div class="container">
+        <div class="namesContainer" id="names">
+        </div>
+        <div class="infoContainer">
+            <div id="infoText">
+                <br><br>
+                <h1 id="curName"></h1>
+                <br><br>
+                <h3 id="curPhone"></h3>
+                <br>
+                <h3 id="curEmail"></h3>
+                <br>
+                <h3 id="curAddress"></h3>
+            </div>
+            <div id="newInfo">
+                <br><br>
+                <input type="text" id="newName" placeholder="Name" class="newText">
+                <br><br>
+                <input type="text" id="newPhone" placeholder="Phone" class="newText">
+                <br><br>
+                <input type="text" id="newEmail" placeholder="E-mail" class="newText">
+                <br><br>
+                <input type="text" id="newAddress" placeholder="Address" class="newText">
+            </div>
+            <div id="infoButtons">
+                <input type="button" value="Delete" id="deleteButton" class="infoButtons">
+                <input type="button" value="Accept" id="acceptContactBtn" class="infoButtons">
+                <input type="button" value="Update" id="acceptEditButton" class="infoButtons">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
