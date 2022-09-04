@@ -155,10 +155,6 @@ let search = document.getElementById('searchBox')
 loadContacts()
 
 addBtn.addEventListener('click', () => {
-    if (contactsArray === null || contactsArray === [] || contactsArray.length === 0) {
-        console.log('add')
-        return
-    }
     showAddScreen()
 })
 
