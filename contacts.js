@@ -164,7 +164,6 @@ acceptContactBtn.addEventListener('click', () => {
 
 editBtn.addEventListener('click', () => {
     if (contactsArray === null || contactsArray === [] || contactsArray.length === 0) {
-        console.log('edit')
         return
     }
     showEditScreen()
