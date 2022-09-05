@@ -55,7 +55,7 @@ function hideAddScreen() {
 function newContact() {
     if (newName.value === '') return
     let lastID
-    if (contactsArray === null) {
+    if (contactsArray === null || contactsArray === [] || contactsArray.length === 0) {
         lastID = -1
     }
     else {
